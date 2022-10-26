@@ -1,0 +1,23 @@
+.picture {
+    float: left;
+}
+
+.title {
+    margin: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.range {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.poster-title {
+    display: flex;
+}
+
+.description {
+    font-size: 30px;
+    padding: 30px;
+}

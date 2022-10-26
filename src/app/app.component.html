@@ -1,3 +1,24 @@
 <div>
-  <movie></movie>
+  <input type="number" [(ngModel)]="InitCounter" />
+  
+  <counter [value]="InitCounter"></counter>
+
+  <button (click)="incCounter(1)">+1</button>
+  <button (click)="incCounter(5)">+5</button>
+
+  <button (click)="InitCounter=InitCounter - 5"> </button>
+  <button (click)="InitCounter=InitCounter + 5"> </button>
+
+
+  <div>
+    <label>Цвет фона: </label>
+    <input type="text" [(ngModel)]="style.backgroundColor"/>
+    <label>Цвет текста: </label>
+    <input type="text" [(ngModel)]="style.color"/>
+    <button (click)="ShowBlock()">{{buttonName}}</button>
+
+    <div class="block" [ngStyle]="style">qwe</div>
+  </div>
+  
+
 </div>
